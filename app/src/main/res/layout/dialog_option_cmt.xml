@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_sua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECE9E9"
+            android:gravity="center"
+            android:padding="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            android:text="Chỉnh sửa"
+            android:focusable="true"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_huydon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_textview"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Xóa"
+            android:textColor="@color/red"
+            android:focusable="true"
+            android:clickable="true"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tvhuy"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Hủy "
+            android:textColor="@color/black"
+            android:focusable="true"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

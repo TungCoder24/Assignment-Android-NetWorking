@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_remove"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/remove"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                />
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/editing"
+                android:layout_marginEnd="15dp"
+                android:layout_toLeftOf="@id/img_remove"
+                />
+        </RelativeLayout>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/img_manga"
+            android:layout_width="220dp"
+            android:layout_height="200dp"
+            android:src="@drawable/tg"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_nameManga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thanh Giong"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </LinearLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/tv_numberRead"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="10 lượt đọc"-->
+<!--            android:gravity="center"-->
+<!--            android:textSize="20sp"-->
+<!--            />-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            >
+            <Button
+                android:id="@+id/btn_readNow"
+                android:layout_width="70sp"
+                android:layout_height="wrap_content"
+                android:text="Đọc ngay"
+                android:textSize="10sp"
+                android:backgroundTint="@color/orange_btn_nav"
+                />
+            <Button
+                android:id="@+id/btn_infor"
+                android:layout_width="77sp"
+                android:layout_height="wrap_content"
+                android:text="Thông tin "
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:backgroundTint="@color/orange_btn_nav"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

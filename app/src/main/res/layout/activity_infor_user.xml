@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.InforUserActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/id_tollBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/orange_btn_nav" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:background="@drawable/bg_image"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true" />
+
+
+
+            <EditText
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_input"
+                android:hint="Email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/ed_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_input"
+                android:hint="Full name"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    />
+                <Button
+                    android:id="@+id/btn_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="20sp"
+                    android:text="Cập nhập"
+                    android:backgroundTint="@color/orange_btn_nav"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
